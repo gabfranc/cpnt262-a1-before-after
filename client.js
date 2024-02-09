@@ -1,3 +1,4 @@
+// Arrays in fruits
 const fruitArr = ["apple", "banana", "mango", "grapes"];
 
 console.log(fruitArr);
@@ -9,3 +10,8 @@ fruitArr.forEach(function(fruit) {
 });
 
 console.log(frArray);
+
+const myHead = "Apple";
+let strOne = "is a fruit that is sweet";
+
+console.log(myHead + strOne);
