@@ -1,5 +1,11 @@
-const myNum = 3.14;
+const fruitArr = ["apple", "banana", "mango", "grapes"];
 
-typeof myNum;
+console.log(fruitArr);
 
-myNum.toString();
+let frArray = [];
+
+fruitArr.forEach(function(fruit) {
+  frArray.push(fruit);
+});
+
+console.log(frArray);
