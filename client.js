@@ -1,45 +1,17 @@
 alert("Fruits Are Yummy!");
 
 //before Values
-let fruitName = "Watermelon";
-let myNum = 48;
+let celebName = "Taylor Swift";
+let celebAge = 34;
 
 
-function fruitVal() {
-  const fruitBefore = document.getElementById("fruitName");
-  fruitVal.style.backgroundColor = "pink";
-  fruitVal.style.textAlign = "center";
-}
+const celebNameEl = document.querySelector("#celebClass");
+const celebNumEl = document.querySelector("#celebNum");
 
-console.log(fruitName);
+celebNameEl.textContent = celebName;
+celebNumEl.textContent = celebAge;
 
-//function name(fruit){
-  console.log(fruit);
+//document.body.append(celebName);
 
-
-//name('banana');
-//function name(fruit){
-  //return name;
-
-
-//name('banana');
-
-//const fruitName = name('banana');
-
-//let myFruit ="Coconuts are delicious"
-//let myNum = 64;
-
-//const fruitName = document.getElementById('fruitOrder');
-//console.log(fruitName.value);
-
-
-//const fruitClass = document.getElementById('fruitClass');
-//console.log(myFruit + myNum);
-
-//Increment or decrement a number using ++/—;
-
-
-// Before Functions
-
-
-// After Functions
+document.body.prepend(celebName);
+celebNameEl.id = "celebClass";
