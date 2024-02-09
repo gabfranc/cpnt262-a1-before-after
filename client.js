@@ -1,3 +1,4 @@
+alert("Fruits Are Yummy!");
 // Arrays in fruits
 const fruitArr = ["apple", "banana", "mango", "grapes"];
 
