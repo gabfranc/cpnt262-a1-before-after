@@ -1,17 +1,4 @@
-alert("Fruits Are Yummy!");
+let myNum = 403;
+let strNum = myNum.toString();
 
-//before Values
-let celebName = "Taylor Swift";
-let celebAge = 34;
-
-
-const celebNameEl = document.querySelector("#celebClass");
-const celebNumEl = document.querySelector("#celebNum");
-
-celebNameEl.textContent = celebName;
-celebNumEl.textContent = celebAge;
-
-//document.body.append(celebName);
-
-document.body.prepend(celebName);
-celebNameEl.id = "celebClass";
+console.log(strNum);
