@@ -31,7 +31,7 @@ console.log(changedWords);
 
 document.getElementById("replaceWords").textContent  = changedWords;
 
-// adding an array using the .push() method
+// adding an array using the .push() method with the h2o mermaids
 let characterArr = ['Rikki', 'Emma', 'Cleo'];
 const push = characterArr.push('Bella');
 console.log(characterArr);
