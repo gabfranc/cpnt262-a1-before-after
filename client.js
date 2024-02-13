@@ -30,31 +30,29 @@ const changedWords = myWords.replace("marks", "crosses out");
 console.log(changedWords);
 
 document.getElementById("replaceWords").textContent  = changedWords;
+
+// adding an array using the .push() method
+let characterArr = ['Rikki', 'Emma', 'Cleo'];
+const push = characterArr.push('Bella');
+console.log(characterArr);
+console.log(push);
+
+document.getElementById("pushArr").textContent = characterArr;
 // Verifying if an element exists in an array.
 
-myWords.includes('marks');
-document.getElementById("includedWord").textContent = myWords.includes('marks');
-const obj = {
+let stringEl = "The Great Barrier Reef";
+const elementStr = stringEl.includes('Barrier');
+document.getElementById("includedEl").textContent = stringEl.includes('Barrier');
+//creating and logging an array of the keys of the object
 
-  banana:{
-    number: 43
-  },
-  strawberry: {
-    number: 15
-  },
-  mango: {
-    number: 60
-  },
-  watermelon: {
-    number: 16
-  }
- 
+const fruitsArr = {
+  banana: 1,
+  coconut: 2,
+  mango: 3
 };
 
-const displayResults = Object.keys(obj).map((key) => [key, obj[key]]);
-console.log(displayResults); 
-
-document.getElementById("arrayObj").textContent = Object.keys(obj).map((key) => [key, obj[key]]);
+console.log(Object.keys(fruitsArr));
+document.getElementById("arrayObj").textContent = Object.keys(fruitsArr);
 
 // removing a key-value pair from an object with the deleted keywords
 
