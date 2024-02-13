@@ -42,26 +42,24 @@ const obj = {
 const displayResults = Object.keys(obj).map((key) => [key, obj[key]]);
 console.log(displayResults); 
 
-document.getElementById("arrObj").textContent = displayResults;
+document.getElementById("arrayObj").textContent = displayResults;
 
 // removing a key-value pair from an object with the deleted keywords
 
-let music = {
-  'pop' : 'Taylor Swift',
-  'classic': 'Mozart',
-  'country' : 'Blake Shelton'
-};
+const musicObj = {
+  firstName: "Taylor",
+  lastName: "Swift",
+  album: "Fearless",
+  song: "Mr Perfectly Fine"
+}
 
-delete music.classic;
-delete music['country'];
-console.log(music);
+delete musicObj["song"];
 
+document.getElementById("newObject").textContent = musicObj.firstName +   musicObj.lastName + "    best song is    " +    musicObj.song;
 
 //styling with js coding
 
-const bodyStyle = document.body.innerHTML;
-
-document.body.style.backgroundColor ="purple";
+document.body.style.backgroundColor ="lightblue";
 
 
 
