@@ -6,6 +6,7 @@ let myNum = num.toString();
 
 console.log(myNum);
 
+
 //incrementing a number
 num++;
 console.log(num);
@@ -52,3 +53,4 @@ let music = {
 delete music.classic;
 delete music['country'];
 console.log(music);
+
