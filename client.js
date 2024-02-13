@@ -1,6 +1,5 @@
 //before and after variables
-// const theDate = new Date();
-//alert("today is" + theDate);
+
 // converting a number into a string
 
 let num = 40;
@@ -13,6 +12,17 @@ num++;
 console.log(num);
 
 document.getElementById("incremNum").textContent  = num++;
+
+
+// Showing the first character of my string.
+const characterString = 'Perfume Bottle';
+const firstCharacter = characterString.substring(0, 1);
+
+console.log (firstCharacter); //Output of the string will be the letter P.
+
+document.getElementById("firstChr").textContent = firstCharacter;
+
+
 // changing or replacing some of the words with new words
 const myWords = "x marks the spot, where we fell apart";
 
@@ -20,8 +30,10 @@ const changedWords = myWords.replace("marks", "crosses out");
 console.log(changedWords);
 
 document.getElementById("replaceWords").textContent  = changedWords;
-// creating and logging an array of the values of my object.
+// Verifying if an element exists in an array.
 
+myWords.includes('marks');
+document.getElementById("includedWord").textContent = myWords.includes('marks');
 const obj = {
 
   banana:{
@@ -42,7 +54,7 @@ const obj = {
 const displayResults = Object.keys(obj).map((key) => [key, obj[key]]);
 console.log(displayResults); 
 
-document.getElementById("arrayObj").textContent = displayResults;
+document.getElementById("arrayObj").textContent = Object.keys(obj).map((key) => [key, obj[key]]);
 
 // removing a key-value pair from an object with the deleted keywords
 
@@ -59,7 +71,5 @@ document.getElementById("newObject").textContent = musicObj.firstName +   musicO
 
 //styling with js coding
 
-document.body.style.backgroundColor ="lightblue";
-
-
+document.body.style.backgroundColor ="lightpink";
 
