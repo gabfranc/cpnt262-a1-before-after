@@ -21,6 +21,7 @@ const firstCharacter = characterString.substring(0, 1);
 console.log (firstCharacter); //Output of the string will be the letter P.
 
 document.getElementById("firstChr").textContent = firstCharacter;
+document.getElementById("beforeChr").textContent = characterString;
 
 
 // changing or replacing some of the words with new words
@@ -28,6 +29,8 @@ const myWords = "x marks the spot, where we fell apart";
 
 const changedWords = myWords.replace("marks", "crosses out");
 console.log(changedWords);
+
+document.getElementById("beforeReplace").textContent  = myWords;
 
 document.getElementById("replaceWords").textContent  = changedWords;
 
@@ -42,6 +45,9 @@ document.getElementById("pushArr").textContent = characterArr;
 
 let stringEl = "The Great Barrier Reef";
 const elementStr = stringEl.includes('Barrier');
+
+document.getElementById("firstEl").textContent = stringEl;
+
 document.getElementById("includedEl").textContent = stringEl.includes('Barrier');
 //creating and logging an array of the keys of the object
 
@@ -64,6 +70,7 @@ const musicObj = {
 }
 
 delete musicObj["song"];
+
 
 document.getElementById("newObject").textContent = musicObj.firstName +   musicObj.lastName + "    best song is    " +    musicObj.song;
 
